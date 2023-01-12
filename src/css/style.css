@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap");
+
+:root {
+  --primary-bg: hsl(257, 72%, 89%);
+  --secondary-bg: hsl(256, 63%, 85%);
+  --primary-text: hsl(258, 45%, 19%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--secondary-bg);
+}
+
+body,
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--primary-text);
+}
+
+.container {
+  background-color: var(--primary-bg);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.container:hover {
+  scale: 1.01;
+}
+
+.left {
+  position: relative;
+}
+
+.positioned {
+  position: absolute;
+  right: 10%;
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}
+
+.right {
+  line-height: 1.5;
+}
+
+.product-code {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.product-name {
+  font-family: "Crimson Pro", serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.product-price {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.add-btn {
+  background-color: transparent;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 0.5px solid var(--primary-text);
+  border-radius: 7rem;
+  padding: 0.5rem 1.5rem;
+  margin-top: 20px;
+}
