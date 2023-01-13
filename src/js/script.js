@@ -9,5 +9,3 @@ btnOpen.addEventListener("click", () => {
 btnClose.addEventListener("click", () => {
   modal.close();
 });
-
-modal.showModal();
