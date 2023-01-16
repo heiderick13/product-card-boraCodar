@@ -3,9 +3,19 @@ const btnClose = document.querySelector("#close");
 const modal = document.querySelector("#modal");
 
 btnOpen.addEventListener("click", () => {
-  modal.showModal();
+  let src = document
+    .querySelector("#sofa-img")
+    .setAttribute("src", "../../img/sofa1.gif");
+
+  btnOpen.classList.remove("active");
+  btnClose.classList.add("active");
 });
 
 btnClose.addEventListener("click", () => {
-  modal.close();
+  let src = document
+    .querySelector("#sofa-img")
+    .setAttribute("src", "../../img/sofa.png");
+
+  btnOpen.classList.add("active");
+  btnClose.classList.remove("active");
 });
