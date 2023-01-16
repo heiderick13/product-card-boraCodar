@@ -5,7 +5,7 @@ const modal = document.querySelector("#modal");
 btnOpen.addEventListener("click", () => {
   let src = document
     .querySelector("#sofa-img")
-    .setAttribute("src", "../../img/sofa1.gif");
+    .setAttribute("src", "./img/sofa1.gif");
 
   btnOpen.classList.remove("active");
   btnClose.classList.add("active");
@@ -14,7 +14,7 @@ btnOpen.addEventListener("click", () => {
 btnClose.addEventListener("click", () => {
   let src = document
     .querySelector("#sofa-img")
-    .setAttribute("src", "../../img/sofa.png");
+    .setAttribute("src", "./img/sofa.png");
 
   btnOpen.classList.add("active");
   btnClose.classList.remove("active");
